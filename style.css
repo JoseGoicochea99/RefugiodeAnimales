@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F1ECC3;
+    box-sizing: border-box;
+
+
+}
+
+.contenedor-global{
+
+    width: 90%;
+    max-width: 2000px;
+    margin: 2px auto;
+    display: grid;
+    grid-gap: 2px;
+}
+
+/* Imagen de fondo del header */
+.fondo {
+
+    height: 1000px;
+    width: 100%;
+
+}
+
+/* NAVEGACION */
+.nav {
+    background-color: #C9D8B6;
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+}
+
+.nav{
+
+    text-decoration: none;
+    list-style-type: none;
+    justify-items: center;
+   
+}
+/* items de navegacion */
+.nav li {
+    background-color: #F1EEE9;
+    margin: 4px 0px;
+    padding: 8px;
+    /* display: flex; */
+
+    display: grid;
+    justify-items: center;
+
+
+
+
+}
+
+/* enlace de la navegacion */
+.nav li a {
+
+    text-decoration: none;
+    color: #515E63;
+    font-size: 30px;
+    font-family: 'Viga', sans-serif;
+    margin: 0px 10px;
+    
+}
+
+
+/* logo de la pagina */
+.logo {
+
+    width: 210px;
+    height: 210px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ZONA PARA ADOPTAR ANIMALES */
+.section-adoptar {
+    background-color: #57837B;
+    padding: 0px;
+    margin: 0px;
+    height: 400px;
+    width: 100%;
+
+    /* Flexbox */
+    /* display: flex;
+    flex-direction: row;*/
+
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+
+
+
+
+
+}
+
+
+/* Cuadro de enlace de adopcion */
+.section-adoptar a {
+
+    margin-top: 20px;
+    padding: 0px 10px;
+    border: 3px solid black;
+    font-family: Sigmar one;
+    color: #FDFFA9;
+    text-decoration: none;
+    height: 180px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section de la historia de un perro antes y despues del refugio */
+.section-antes-despues {
+    /* display: flex;
+    flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 200px;
+
+
+
+}
+
+/* texto de la historia */
+.section-antes-despues div p {
+
+    font-size: 20px;
+    font-family: Alice;
+    width: 650px;
+}
+
+
+/* imagenes de los perros antes y despues */
+.img-antes-despues {
+
+    width: 300px;
+    height: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #C9D8B6;
+
+}
+
+/* Contenedor del footer */
+.contenedor-footer {
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between; */
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: end;
+    
+
+
+
+
+}
+/* contenedor de Redes sociales */
+.contenedor-redes{
+    
+
+    width: 100px;
+}
+
+/* enlaces a Redes sociales */
+.contenedor-redes a {
+
+    display: block;
+    text-decoration: none;
+    font-family: monoton;
+
+}
+
+
+
+
+.contenedor-boton{
+    margin: 10px 0px;
+    padding: 0px;
+    justify-self: center;
+}
+
+.caja-boton {
+
+    /* margin-left: 70px;
+    margin-bottom: 29px; */
+    padding: 2px 6px;
+    margin: 0px;
+    
+
+}
+
+/* boton para subir */
+.contenedor-boton button a {
+
+    margin: 0px;
+    text-decoration: none;
+}
+
+.contenedor-logo{
+
+    justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NOSOTROS */
+
+/* Contenedor general */
+.contenedor-imagen-texto {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/* Texto */
+.contenedor-texto p {
+
+    font-family: 'Lato', sans-serif;
+    width: 900px;
+    font-size: 20px;
+
+}
+
+/* imagenes */
+.contenedor-imagenes img {
+    display: block;
+    width: 600px;
+    height: 400px;
+}
+
+
+
+
+
+/* Contenedor mapa y texto */
+
+.contenedor-mapa {
+    display: flex;
+    flex-direction: row;
+}
+
+/* mapa */
+.contenedor-mapa iframe {
+
+
+    width: 500px;
+
+}
+
+/* Texto */
+.contenedor-mapa p {
+
+    font-family: 'Lato', sans-serif;
+    width: 400px;
+    margin-left: 20px;
+}
+
+
+/* FIN NOSOTROS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HISTORIAS */
+
+/* Texto */
+.contenedor-imagen-texto .texto-historia {
+
+    width: 900px;
+    font-size: 20px;
+}
+
+/* Foto */
+.imagen-historia {
+
+    width: 700px;
+    height: 500px;
+}
+
+/* FIN HISTORIAS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DONAR */
+
+
+
+.opciones-donar {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.caja-donar {
+    margin: 10px;
+    padding: 25px;
+    border: 2px solid #515E63;
+    background-color: #2155CD;
+}
+
+.caja-donar a {
+
+    text-decoration: none;
+    color: #F1EEE9;
+    font-family: Sigmar one;
+}
+
+
+
+/* FIN DONAR */
+
+
+/* CONTACTO */
+
+.formulario {
+
+    width: 900px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px solid black;
+}
+
+.entrada {
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+#mensaje {
+
+    height: 20px;
+}
+
+
+.boton-enviar {
+
+    margin-left: 400px;
+
+}
+
+.boton-enviar a {
+
+    text-decoration: none;
+    padding: 0px 15px;
+
+
+}
