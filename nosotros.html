@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Alice&family=Lato:wght@700&family=Monoton&family=Sigmar+One&family=Viga&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Sobre Nosotros</title>
 
 </head>
@@ -42,7 +43,7 @@
 
 
             <div class="contenedor-imagen-texto">
-                <div class="contenedor-texto">
+                <div data-aos="zoom-in" class="contenedor-texto">
 
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -121,7 +122,8 @@
 
                 </div>
 
-                <div class="contenedor-imagenes">
+                <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                    data-aos-duration="500" class="contenedor-imagenes">
 
                     <img src="multimedia/foto1.jpg" alt="Foto 1">
                     <img src="multimedia/foto2.jpg" alt="Foto 2">
@@ -130,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="contenedor-mapa">
+            <div data-aos="zoom-in-right" class="contenedor-mapa">
 
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d687.8450012057317!2d-57.92083022473854!3d-34.90743630079205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6092f812767%3A0xd53df7284364674e!2sPlaza%20General%20Manuel%20Belgrano!5e0!3m2!1ses-419!2sar!4v1652265861575!5m2!1ses-419!2sar"
@@ -146,7 +148,7 @@
         </section>
 
         <!-- FOOTER DE LA PAGINA -->
-        <footer>
+        <footer data-aos="fade-down">
 
             <div class="contenedor-footer">
 
@@ -184,7 +186,10 @@
     </div>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 
