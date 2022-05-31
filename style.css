@@ -102,8 +102,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     border-radius: 0.7rem;
-    
-
 
 
 }
@@ -112,7 +110,6 @@ body {
 /* Cuadro de enlace de adopcion */
 .section-adoptar a {
 
-   
     font-family: Sigmar one;
     color: #486963;
     text-decoration: none;
@@ -131,9 +128,6 @@ body {
 
 /* Section de la historia de un perro antes y despues del refugio */
 .section-antes-despues {
-    /* display: flex;
-    flex-direction: row; */
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 200px;
@@ -221,7 +215,7 @@ footer {
     margin: 0px;
     padding: 0;
     text-decoration: none;
-    /* color: #198754; */
+
 }
 
 .contenedor-logo{
@@ -269,31 +263,39 @@ footer {
 
 /* NOSOTROS */
 
+.section-nosotros{
+    box-sizing: border-box;
+}
+
 /* Contenedor general */
 .contenedor-imagen-texto {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-}
-
-/* Texto */
-.contenedor-texto p {
-
-    font-family: 'Lato', sans-serif;
-    width: 900px;
-    font-size: 20px;
+   width: 100%;
+   max-width: 110em;
+   margin: auto;
+   background-color: #F1EEE9;
+   padding: 3em 3.5em;
 
 }
 
 /* imagenes */
-.contenedor-imagenes img {
-    display: block;
+.contenedor-imagen-texto img {
     width: 600px;
     height: 400px;
-    padding: 5px 0px;
+        
 }
+
+/* Texto */
+.contenedor-imagen-texto p {
+
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 0;
+
+}
+
+
 
 
 
@@ -304,15 +306,9 @@ footer {
 .contenedor-mapa {
     display: flex;
     flex-direction: row;
+    margin: 1em 0;
 }
 
-/* mapa */
-.contenedor-mapa iframe {
-
-
-    width: 500px;
-
-}
 
 /* Texto */
 .contenedor-mapa p {
