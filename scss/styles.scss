@@ -1,0 +1,365 @@
+//variables
+$color1: #F1ECC3;
+$color2: #7fb4aa;
+$color-nav: #C9D8B6;
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1ECC3;
+}
+
+header {
+    height: 200px;
+    padding: 0 50px;
+    /* ARREGLAR COLOR */
+    color: #0000003d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+/* NAVEGACION */
+.navegacion {
+    background-color: #C9D8B6;
+    display: flex;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+
+
+
+    li {
+        /* items de navegacion */
+        margin: 4px 0px;
+        padding: 0px;
+        border-radius: 5%;
+        transition-duration: 0.2s;
+
+
+
+
+        :hover {
+
+            transform: scale(1.14);
+        }
+
+
+        a {
+            /* enlace de la navegacion */
+            text-decoration: none;
+            color: #515E63;
+            font-size: 30px;
+            font-family: 'Viga', sans-serif;
+            padding: 0 10px;
+            transition: 0, 4s;
+        }
+    }
+}
+
+/* Responsive nav */
+.mostrar-menu,
+.esconder-menu {
+
+    color: rgba(35, 36, 8, 0.133);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.8s;
+}
+
+.mostrar-menu {
+    order: 1;
+}
+
+.mostrar-menu:hover,
+.esconder-menu:hover {
+    color: #062e7e;
+
+}
+
+#check {
+    display: none;
+}
+
+/* BANNER */
+#banner {
+    padding: 0 50px;
+    background-image: url(/multimedia/fondo.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* MEDIA RESPONSIVE */
+@media (max-width: 920px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+
+    }
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #F1ECC3;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .navegacion {
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+        color: #483491;
+
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+}
+
+
+/* logo de la pagina */
+.logo {
+
+    width: 11em;
+    height: 11em;
+}
+
+/* ZONA PARA ADOPTAR ANIMALES */
+.section-adoptar {
+
+    background-color: #7fb4aa;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+
+    .card {
+        margin: 32px 28px;
+        width: 500px;
+
+        img {
+            padding: 10px 12px;
+            height: auto;
+            width: auto;
+        }
+    }
+
+
+
+    a {
+        /* Cuadro de enlace de adopcion */
+        font-family: Sigmar one;
+        color: #486963;
+        text-decoration: none;
+    }
+}
+
+/* Section de la historia de un perro antes y despues del refugio */
+.section-antes-despues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    div p {
+
+        font-size: 18px;
+        font-family: Alice;
+        width: 500px;
+
+    }
+
+}
+
+/* imagenes de los perros antes y despues */
+
+.img-antes-despues {
+    width: 250px;
+
+}
+
+#antes,
+#despues {
+    height: 400px;
+    width: 250px;
+
+}
+
+.img-respo {
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+
+    #antes,
+    #despues {
+        display: none;
+    }
+
+    .section-antes-despues {
+        display: flex;
+    }
+
+    .img-respo {
+        display: inline;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    .section-antes-despues div p {
+        display: none;
+    }
+
+
+}
+
+
+footer {
+    background-color: #C9D8B6;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+
+
+
+    .contenedor-redes {
+        /* contenedor de Redes sociales */
+        width: 300px;
+        height: auto;
+
+        h5 {
+            padding-left: 39px;
+        }
+
+        .caja-redes {
+            padding: 10px 0;
+
+
+
+            i {
+                /* ICONOS */
+                margin: 10px;
+                font-size: 20px;
+                width: auto;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            justify-self: center;
+            color: aliceblue;
+        }
+
+
+
+    }
+}
+
+.contenedor-boton {
+    padding: 0px;
+
+    button a {
+        /* boton para subir */
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+
+    }
+
+
+}
+
+.contenedor-logo {
+    justify-self: end;
+}
+
+#logo-footer {
+    margin-right: 12px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+
+    footer {
+        display: block;
+
+
+    }
+
+    .contenedor-redes {
+
+        margin: 0 auto;
+        width: 160px;
+        height: auto;
+
+        h5 {
+            padding: 0;
+        }
+    }
+
+
+
+
+    .caja-redes {
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+        a {
+            display: none;
+        }
+    }
+
+
+    .contenedor-boton {
+        display: flex;
+        justify-content: center;
+
+        button a {
+
+            margin: 0px;
+            padding: 0;
+            text-decoration: none;
+
+        }
+    }
+
+}
