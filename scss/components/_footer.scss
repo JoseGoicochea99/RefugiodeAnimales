@@ -1,0 +1,122 @@
+@import "components/variables";
+
+footer {
+    background-color: $color-nav;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 10px;
+
+
+
+    .contenedor-redes {
+        /* contenedor de Redes sociales */
+        width: 300px;
+        height: auto;
+
+        h5 {
+            padding-left: 39px;
+        }
+
+        .caja-redes {
+            padding: 10px 0;
+
+
+
+            i {
+                /* ICONOS */
+                margin: 10px;
+                font-size: 20px;
+                width: auto;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            justify-self: center;
+            color: aliceblue;
+        }
+
+
+
+    }
+}
+
+.contenedor-boton {
+    padding: 0px;
+
+    button a {
+        /* boton para subir */
+        margin: 0px;
+        padding: 0;
+        text-decoration: none;
+
+        .contenedor-logo {
+            justify-self: end;
+
+            #logo-footer {
+                margin-right: 12px;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+
+
+    footer {
+        display: block;
+
+
+    }
+
+    .contenedor-redes {
+
+        margin: 0 auto;
+        width: 160px;
+        height: auto;
+
+        h5 {
+            padding: 0;
+        }
+    }
+
+
+
+
+    .caja-redes {
+        display: flex;
+        justify-content: center;
+        width: auto;
+
+        a {
+            display: none;
+        }
+    }
+
+
+    .contenedor-boton {
+        display: flex;
+        justify-content: center;
+
+        button a {
+
+            margin: 0px;
+            padding: 0;
+            text-decoration: none;
+
+        }
+    }
+
+}

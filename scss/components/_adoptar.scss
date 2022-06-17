@@ -1,0 +1,34 @@
+@import "components/variables";
+
+/* ZONA PARA ADOPTAR ANIMALES */
+.section-adoptar {
+
+    background-color: map-get($map: $colores, $key: 'color2' );
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+
+    .card {
+        margin: 32px 28px;
+        width: 500px;
+
+        img {
+            padding: 10px 12px;
+            height: auto;
+            width: auto;
+        }
+    }
+
+
+
+    a {
+        /* Cuadro de enlace de adopcion */
+        font-family: Sigmar one;
+        color: map-get($map: $colores, $key: 'color4' );
+        text-decoration: none;
+    }
+}

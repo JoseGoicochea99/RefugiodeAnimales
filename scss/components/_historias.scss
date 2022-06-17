@@ -1,0 +1,71 @@
+@import "components/variables";
+
+/* Section de la historia de un perro antes y despues del refugio */
+.section-antes-despues {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    div p {
+
+        font-size: 18px;
+        font-family: Alice;
+        width: 500px;
+
+    }
+
+
+
+    .img-antes-despues {
+        /* imagenes de los perros antes y despues */
+        width: 250px;
+
+        #antes,
+        #despues {
+            height: 400px;
+            width: 250px;
+
+        }
+
+        .img-respo {
+            display: none;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    #antes,
+    #despues {
+        display: none;
+    }
+
+    .section-antes-despues {
+        display: flex;
+    }
+
+    .img-respo {
+        display: inline;
+        width: 100%;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+
+    .section-antes-despues div p {
+        display: none;
+    }
+
+
+}

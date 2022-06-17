@@ -1,0 +1,121 @@
+@import "components/variables";
+
+
+header {
+    height: 200px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    #check {
+        display: none;
+    }
+
+
+    .logo {
+        /* logo de la pagina */
+        width: 11em;
+        height: 11em;
+    }
+
+
+    .navegacion {
+        /* NAVEGACION */
+        background-color: map-get($map: $colores, $key: 'color-nav');
+        display: flex;
+        list-style-type: none;
+        margin: 0 auto;
+        padding: 0;
+
+
+
+        li {
+            /* items de navegacion */
+            margin: 4px 0px;
+            padding: 0px;
+            border-radius: 5%;
+            transition-duration: 0.2s;
+
+
+
+
+            &:hover {
+
+                transform: scale(1.14);
+            }
+
+
+            a {
+                /* enlace de la navegacion */
+                text-decoration: none;
+                color: map-get($map: $colores, $key: 'color-a');
+                font-size: 30px;
+                font-family: 'Viga', sans-serif;
+                padding: 0 10px;
+                transition: 0, 4s;
+
+                &:hover {
+
+                    color: map-get($map: $colores, $key: 'color-a-hover');
+                }
+
+            }
+
+        }
+    }
+
+
+}
+
+#banner {
+    /* BANNER */
+    padding: 0 50px;
+    background-image: url(/multimedia/fondo.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+@import 'components/extends';
+
+/* MEDIA NAV */
+@media (max-width: 920px) {
+
+    .mostrar-menu,
+    .esconder-menu {
+        display: block;
+    }
+
+
+    .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: map-get($map: $colores, $key: 'color1');
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .navegacion{
+        display: block;
+        padding: 4px;
+        text-decoration: none;
+
+    }
+
+    .esconder-menu {
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+}

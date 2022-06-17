@@ -1,0 +1,16 @@
+%menu{
+
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.8s;
+    
+}
+
+.mostrar-menu{
+    order: 1;
+    @extend %menu;
+}
+.esconder-menu{
+    @extend %menu;
+}
