@@ -4,170 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Protegemos a una gran cantidad de animales rescatados del maltrato y abandono. Realizamos campañas de esterilización y concientizamos en escuelas">
-    <meta name="keywords" content="refugio, perros, animales, adopcion, rescate, vacunacion, castracion, adoptar, amor, maltrato, abandono, donaciones, voluntario">
+    <meta name="description"
+        content="Protegemos a una gran cantidad de animales rescatados del maltrato y abandono. Realizamos campañas de esterilización y concientizamos en escuelas">
+    <meta name="keywords"
+        content="refugio, perros, animales, adopcion, rescate, vacunacion, castracion, adoptar, amor, maltrato, abandono, donaciones, voluntario">
 
     <meta property="og:title" content="Refugio de perros y gatos abandonados">
-    <meta property="og:description" content="Protegemos a una gran cantidad de animales rescatados del maltrato y abandono. Realizamos campañas de esterilización y concientizamos en escuelas">
-
+    <meta property="og:description"
+        content="Protegemos a una gran cantidad de animales rescatados del maltrato y abandono. Realizamos campañas de esterilización y concientizamos en escuelas">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/0ff49b3ce7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Alice&family=Lato:wght@700&family=Monoton&family=Sigmar+One&family=Viga&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300&family=Indie+Flower&family=Lato&family=Manrope&family=Mukta:wght@200&family=Source+Sans+Pro:wght@600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Refugio de Animales Abandonados</title>
-    <script src="https://kit.fontawesome.com/0ff49b3ce7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
+        <div class="contenedor">
+            <a href="index.html"><img src="multimedia/logo2.png" alt="Logo de pagina"></a>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">
+                &#8801
+            </label>
+            <nav class="menu">
+                <ul class="navegacion">
+                    <li><a href="index.html">Inicio</a></li>
 
-        <!-- LOGO -->
-        <img class="logo" src="multimedia/patitaslogo.png" alt="logo de pagina">
+                    <li><a href="nosotros.html">Nosotros</a></li>
 
-        <input type="checkbox" id="check">
-        <label for="check" class="mostrar-menu">
-            &#8801
-        </label>
+                    <li><a href="adoptar.html">Adoptar</a></li>
 
-        <!-- NAVEGACION -->
-        <nav class="menu">
-            <ul class="navegacion">
-                <li><a href="index.html">Inicio</a></li>
+                    <li><a href="donar.html">Donar</a></li>
 
-                <li><a href="nosotros.html">Nosotros</a></li>
-
-                <li><a href="historias.html">Historias</a></li>
-
-                <li><a href="donar.html">Donar</a></li>
-
-                <li><a href="contacto.html">Contacto</a></li>
-                <label for="check" class="esconder-menu">
-                    &#215
-                </label>
-            </ul>
-        </nav>
-
-
-
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <section id="banner">
-        <!-- FONDO DEL INICIO -->
-        <div class="contenido-banner" data-aos="fade-up" data-aos-duration="3000">
-
-        </div>
-    </section>
-
+    <!-- Contenido principal -->
+    <main>
+        <!-- BANNER -->
+        <section id="banner">
+            <img src="multimedia/fondo.jpg" alt="Imagen de fondo">
+        </section>
 
 
-    <section class="section-adoptar">
-        <div class="card">
-            <img src="multimedia/adulto.jpg" class="card-img-top" alt="imagen de un perro adulto">
-            <div class="card-body">
-                <h5 class="card-title"><a href="#">ADOPTAR PERROS ADULTOS</a></h5>
-                <p class="card-text">Cuando adoptamos un perro adulto podemos estar tranquilos porque ya habrá
-                    superado la etapa de crecimiento. No tendrás que hacer reformas o mudarte a un lugar más amplio
-                    porque el perro no crecerá más y podrás estar seguro de que sí se adapta al tamaño de tu hogar.
-                </p>
+
+        <!-- ZONA PARA ADOPTAR ANIMALES -->
+        <section class="section-adoptar">
+            <div class="contenedor-adoptar">
+                <div class="cuadro">
+                    <img src="multimedia/adulto.jpg" alt="imagen de un perro adulto">
+
+                    <h5><a href="#">ADOPTAR PERROS ADULTOS</a></h5>
+                    <p>Cuando adoptamos un perro adulto podemos estar tranquilos porque ya habrá superado la etapa de
+                        crecimiento. No tendrás que hacer reformas o mudarte a un lugar más amplio porque el perro no
+                        crecerá más y podrás estar seguro de que sí se adapta al tamaño de tu hogar.
+                    </p>
+                </div>
+
+                <div class="cuadro">
+                    <img src="multimedia/cachorro.jpg" alt="imagen de un cachorro">
+                    <h5><a href="adoptar.html">ADOPTAR CACHORROS</a></h5>
+                    <p>Los cachorros son un gran apoyo en tiempos difíciles. Sí, los cachorros tienen la capacidad de
+                        hacernos reír y tener vidas más largas. Y eso no es todo,también son muy lindos y divertidos.
+                    </p>
+                </div>
+
+                <div class="cuadro">
+                    <img src="multimedia/gato.jpg" alt="imagen de un gato">
+
+                    <h5><a href="#">ADOPTAR GATOS</a></h5>
+                    <p>No hay duda de ello, los gatos son grandes mascotas. Después de todo, ¿qué hay mejor que volver a
+                        casa al final de un duro día y escuchar el ronroneo de satisfacción de una adorable bola de
+                        pelo?
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="multimedia/cachorro.jpg" class="card-img-top" alt="imagen de un cachorro">
-            <div class="card-body">
-                <h5 class="card-title"><a href="#">ADOPTAR CACHORROS</a></h5>
-                <p class="card-text">Los cachorros son un gran apoyo en tiempos difíciles. Sí, los cachorros tienen
-                    la capacidad de hacernos reír y tener vidas más largas. Y eso no es todo, también son muy lindos
-                    y divertidos.</p>
+        </section>
+
+        <section class="section-historias">
+
+            <h2>Con tu ayuda podemos acabar con el matrato animal</h2>
+            <div class="contenedor-historias">
+                <div class="img-texto">
+                    <img src="multimedia/antes.png" alt="imagen de un perro antes de ser rescatado">
+                </div>
+
+
+                <!-- TEXTO DESCRIPTIVO -->
+
+                <div class="img-texto">
+                    <p>El amor y los cuidados son fundamentales para que una mascota viva sana y feliz. Pero esto es más
+                        evidente en el caso de los animales abandonados, algunos en situaciones desesperantes, que son
+                        recogidos y recuperados por protectoras o gente de buen corazón que les da la posibilidad de
+                        tener
+                        una nueva y buena vida.
+                    </p>
+                </div>
+
+
+                <!-- FOTO DEL DESPUES -->
+
+                <div class="img-texto">
+                    <img src="multimedia/despues.png" alt="imagen de un perro despues de ser rescatado">
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="multimedia/gato.jpg" class="card-img-top" alt="imagen de un gato">
-            <div class="card-body">
-                <h5 class="card-title"><a href="#">ADOPTAR GATOS</a></h5>
-                <p class="card-text">No hay duda de ello, los gatos son grandes mascotas. Después de todo, ¿qué hay
-                    mejor que volver a casa al final de un duro día y escuchar el ronroneo de satisfacción de una
-                    adorable bola de pelo?
-                </p>
-            </div>
-        </div>
+        </section>
 
-    </section>
-
-
-    <!-- HISTORIA DEL ANTES Y DESPUES DE UN PERRO RESCATADO -->
-
-
-
-    <section class="section-antes-despues">
-        <!-- FOTO DEL ANTES -->
-        <div class="img-antes-despues">
-            <img id="antes" src="multimedia/antes.png" alt="imagen de un perro antes de ser rescatado">
-            <img class="img-respo" src="multimedia/a-respo.png" alt="imagen de un perro antes de ser rescatado para dispositivos pequeños">
-        </div>
-
-        <!-- TEXTO DESCRIPTIVO -->
-        <div data-aos="zoom-in">
-            <p>El amor y los cuidados son fundamentales para que una mascota viva sana y feliz. Pero esto es más evidente en el caso de los animales abandonados, algunos en situaciones desesperantes, que son recogidos y recuperados por protectoras o gente de buen corazón que les da la posibilidad de tener una nueva y buena vida. 
-            </p>
-        </div>
-
-        <!-- FOTO DEL DESPUES -->
-        <div class="img-antes-despues">
-            <img id="despues" src="multimedia/despues.png" alt="imagen de un perro despues de ser rescatado">
-            <img class="img-respo" src="multimedia/d-respo.png" alt="imagen de un perro despues de ser rescatado para dispositivos pequeños">
-        </div>
-
-    </section>
-
-
+    </main>
 
     <!-- FOOTER DE LA PAGINA -->
-    <footer class="align-items-end" data-aos="fade-down">
+    <footer>
 
+        <div class="contenedor-footer">
+            <div class="contenedor-redes">
+                <h5>REDES SOCIALES</h5>
+                <div class="red">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-sm"></i>Siguenos en
+                        Facebook</a>
+                </div>
+                <div class="red">
 
-        <div class="contenedor-redes align-self-center">
-            <h5>REDES SOCIALES</h5>
-            <div class="caja-redes"><i class="fa-brands fa-facebook fa-sm"></i>
-                <a href="https://www.facebook.com">Siguenos en Facebook</a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i>Siguenos en Instagram</a>
+                </div>
+                <div class="red">
+
+                    <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i>Siguenos en Twitter</a>
+                </div>
+
             </div>
-            <div class="caja-redes"><i class="fa-brands fa-instagram"></i>
-                <a href="https://www.instagram.com">Siguenos en Instagram</a>
+
+
+
+            <!-- MOVERÁ AL USUARIO AL TOP DE LA PAGINA -->
+            <div class="contenedor-boton">
+
+                <a href="#" role="button">Arriba</a>
+
             </div>
-            <div class="caja-redes"><i class="fa-brands fa-twitter"></i>
-                <a href="https://www.twitter.com">Siguenos en Twitter</a>
+
+
+            <!-- LOGO -->
+            <div id="footer-logo">
+                <img src="multimedia/patitaslogo.png" alt="logo de pagina">
             </div>
-
-        </div>
-
-
-
-        <!-- MOVERÁ AL USUARIO AL TOP DE LA PAGINA -->
-        <div class="contenedor-boton">
-            <a class="btn btn-outline-success" href="#" role="button">Arriba</a>
-
-        </div>
-
-
-        <!-- LOGO -->
-        <div class="contenedor-logo">
-            <img class="logo" id="logo-footer" src="multimedia/patitaslogo.png" alt="logo de pagina">
         </div>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js">
 
 </body>
 

@@ -1,17 +1,34 @@
 @import "components/variables";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     padding: 0;
     margin: 0;
-    background-color: map-get($map: $colores, $key: 'color1' );
-
-
+    background-color: map-get($map: $coloresfondos, $key: 'color1' );
+}
+section {
+    margin-bottom: 30px;
 }
 
 @import 'components/header';
+
+@import 'components/banner';
 
 @import 'components/adoptar';
 
 @import 'components/historias';
 
 @import 'components/footer';
+
+@import 'pestañas/nosotros';
+
+@import 'pestañas/adoptar';
+
+@import 'pestañas/donar';
+
+@import 'pestañas/contacto';
+

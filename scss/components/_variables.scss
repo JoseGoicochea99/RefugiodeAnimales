@@ -1,15 +1,99 @@
 //variables
-$color1:#F1ECC3;
-$color2: #7fb4aa;
-$color-nav: #C9D8B6;
+// color de iconos: barra de menu y redes sociales
+$coloriconos:#010036;
 
-$colores: (
+$coloresfondos: (
+    //general
+    'color1':#FFEEDB,
+    // header y menu
+    'color2':#F1ECC3,
+    // menu hover
+    'color4': #eeec98,
+    //footer contacto-formulario-btn
+    'color5': #0A1D37,
+    // section adoptar
+    'color6': #FFD8CC,
+    // section-historias
+    'color7': #FFBD9B,
+    // contenedor-boton a
+    'color8': #ffff,
+    // contenedor-boton a:hover
+    'color9': #4CAF50,
+    // card 2
+    'color10': #50af50,
+    // card 2
+    'color11': #49370f,
+    // botones +
+    'color12': #8982ee,
+    // botones
+    'color13': #14d124,
+    // card-header +
+    'color14': #ff416c,
+    // card-header
+    'color15': #ff4b2b,
+    // contacto-formulario-btn
+    'color16': #0b4cda,
+    'color17': #ff4b2b,
+    'color18': #ff4b2b,
+    'color19': #ff4b2b,
+    'color20': #ff4b2b,
+
+
+
+    
+);
+
+$coloresletras: (
+    //contenedor-redes: h5 y a
     'color1':#F1ECC3,
-    'color2':#7fb4aa,
-    'color-nav': #C9D8B6,
-    'color-a': #536351,
-    'color-a-hover': #273c46,
-    // color de letra de los cuadros de adopcion
-    'color4': #5b6948
+    // menu
+    'color3': #010036,
+    //boton 
+    'color4': #0A1D37,
+    //boton:hover car-contenido info
+    'color5': #ffffff,
+    //cuadros de adopcion
+    'color6': #5e9e1d,
+
+    'color7': #F1ECC3,
+    'color8': #5b6948,
+    'color9': #5b6948,
+    'color10': #5b6948,
+    'color11': #5b6948,
+    'color12': #5b6948,
+    'color13': #5b6948,
+
+);
+$coloresbordes: (
+    // navegacion a
+    'color1':#ffffff,
+    // contenedor-boton a
+    'color2':#4CAF50,
+    // card3
+    'color3':#bd1212,
+    // contacto-formulario-texto
+    'color4':#010036,
+    'color5':ffffff,
+    'color6':ffffff,
+    'color7':ffffff,
+
+
+
+
+);
+$coloressombras: (
+    // contenedor-adoptar cuadro
+    'color1':#b38548,
+    // contenedor-adoptar cuadro:hover
+    'color2':#0A1D37,
+    // card2
+    'color3':#121310,
+    'color4':ffffff,
+    'color5':ffffff,
+    'color6':ffffff,
+    'color7':ffffff,
+
+
+
 
 );

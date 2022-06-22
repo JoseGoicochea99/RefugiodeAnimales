@@ -2,120 +2,130 @@
 
 
 header {
-    height: 200px;
-    padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: map-get($map: $coloresfondos, $key: 'color2');
+    /* color de la barra del menu */
+    color: $coloriconos;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 
-    #check {
-        display: none;
+    .contenedor {
+        width: 90%;
+        margin: auto;
+        max-width: 1400px;
+
+
+        #menu-bar {
+            /* simbolo de barras*/
+            display: none;
+        }
+
+        label {
+            float: right;
+            font-size: 40px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+       
+
     }
 
+}
 
-    .logo {
-        /* logo de la pagina */
-        width: 11em;
-        height: 11em;
+
+
+
+
+/* MENU */
+
+.menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: map-get($map: $coloresfondos, $key: 'color2' );
+    transition: all 0.8s;
+    transform: translateX(-100%);
+
+    .navegacion li {
+        text-align: center;
+
+        a {
+            display: block;
+            font-family: 'Source Sans Pro', sans-serif;
+            // COLOR DE LETRA DEL MENU
+            color: #180753;
+            height: 60px;
+            text-decoration: none;
+            padding: 25px;
+            border-bottom: 1px solid map-get($map: $coloresbordes, $key: 'color1' );
+        
+        }
     }
 
+}
 
-    .navegacion {
-        /* NAVEGACION */
-        background-color: map-get($map: $colores, $key: 'color-nav');
+
+.menu a:hover {
+    background-color: map-get($map: $coloresfondos, $key: 'color4' );
+}
+
+#menu-bar:checked~.menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:900px) {
+
+    header {
         display: flex;
-        list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
+        .menu {
+            position: static;
+            width: auto;
+            height: 100%;
+            transform: translateX(0);
+            float: right;
+            display: flex;
 
-
-
-        li {
-            /* items de navegacion */
-            margin: 4px 0px;
-            padding: 0px;
-            border-radius: 5%;
-            transition-duration: 0.2s;
-
-
-
-
-            &:hover {
-
-                transform: scale(1.14);
-            }
-
-
-            a {
-                /* enlace de la navegacion */
-                text-decoration: none;
-                color: map-get($map: $colores, $key: 'color-a');
-                font-size: 30px;
-                font-family: 'Viga', sans-serif;
-                padding: 0 10px;
-                transition: 0, 4s;
-
-                &:hover {
-
-                    color: map-get($map: $colores, $key: 'color-a-hover');
+            .navegacion {
+                display: flex;
+                list-style: none;
+                a {
+                    border: none;
+                    font-size: 20px;
                 }
-
             }
+    
+            
+    
+        }
 
+        label {
+            display: none;
         }
     }
 
 
+    
+
+    
+
 }
 
-#banner {
-    /* BANNER */
-    padding: 0 50px;
-    background-image: url(/multimedia/fondo.jpg);
-    height: 50vh;
-    background-size: cover;
-    background-position: center;
+@media (min-width:1280px) {
+    .menu a {
+        font-size: 25px;
+        padding-top: 15px;
+    }
 }
 
-@import 'components/extends';
-
-/* MEDIA NAV */
-@media (max-width: 920px) {
-
-    .mostrar-menu,
-    .esconder-menu {
-        display: block;
+@media (min-width:2040px) {
+    .menu a {
+        font-size: 30px;
+        padding-top: 12px;
     }
-
-
-    .menu {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: map-get($map: $colores, $key: 'color1');
-        right: -100%;
-        top: 0;
-        text-align: center;
-        padding: 100px 0px;
-        z-index: 100;
-        transition: 0.8s;
-    }
-
-    .navegacion{
-        display: block;
-        padding: 4px;
-        text-decoration: none;
-
-    }
-
-    .esconder-menu {
-        position: absolute;
-        top: 40px;
-        right: 15px;
-    }
-
-    #check:checked~.menu {
-        right: 0;
-    }
-
 }

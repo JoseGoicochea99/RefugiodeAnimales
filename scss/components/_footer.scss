@@ -1,122 +1,93 @@
 @import "components/variables";
 
 footer {
-    background-color: $color-nav;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 5px 10px;
+    background-color: map-get($map: $coloresfondos, $key: 'color5');
+
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: auto;
+
+        .contenedor-redes {
+            max-width: 220px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            color: map-get($map: $coloresletras, $key: 'color1' );
+            padding-top: 12px;
+
+            .red {
+                height: 20px;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-family: 'Indie Flower', cursive;
+                    color: map-get($map: $coloresletras, $key: 'color1' );
+
+                    i {
+                        padding: 0 10px;
+
+                    }
 
 
 
-    .contenedor-redes {
-        /* contenedor de Redes sociales */
-        width: 300px;
-        height: auto;
+                }
 
-        h5 {
-            padding-left: 39px;
+            }
+
         }
 
-        .caja-redes {
-            padding: 10px 0;
+        .contenedor-boton {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            margin: 4px 2px;
 
 
+            a {
+                /* boton para subir */
+                text-decoration: none;
+                padding: 6px 12px;
+                font-family: 'Source Sans Pro', sans-serif;
+                transition: all 0.4s;
+                background-color: map-get($map: $coloresfondos, $key: 'color8' );
+                color: map-get($map: $coloresletras, $key: 'color4' );
+                border: 2px solid map-get($map: $coloresbordes, $key: 'color2' );
+                border-radius: 10px;
 
-            i {
-                /* ICONOS */
-                margin: 10px;
-                font-size: 20px;
-                width: auto;
+                &:hover {
+                    background-color: map-get($map: $coloresfondos, $key: 'color9' );
+                    color: map-get($map: $coloresfondos, $key: 'color5' );
+                }
             }
         }
-
-        a {
-            text-decoration: none;
-            justify-self: center;
-            color: aliceblue;
-        }
-
-
-
     }
 }
 
-.contenedor-boton {
-    padding: 0px;
 
-    button a {
-        /* boton para subir */
-        margin: 0px;
-        padding: 0;
-        text-decoration: none;
-
-        .contenedor-logo {
-            justify-self: end;
-
-            #logo-footer {
-                margin-right: 12px;
-                height: 100%;
-                width: 100%;
-            }
-        }
-    }
-
-
-}
-
-
-
-
-
-
-
+/* FOOTER RESPONSIVE */
 
 @media (max-width: 600px) {
-
-
-    footer {
+    footer .contenedor-footer {
         display: block;
 
+        .contenedor-redes {
+            margin: 0 auto;
+    
+        }
 
-    }
+        .contenedor-boton {
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+    
+        }
 
-    .contenedor-redes {
-
-        margin: 0 auto;
-        width: 160px;
-        height: auto;
-
-        h5 {
-            padding: 0;
+        #footer-logo {
+            display: flex;
+            justify-content: center;
         }
     }
-
-
-
-
-    .caja-redes {
-        display: flex;
-        justify-content: center;
-        width: auto;
-
-        a {
-            display: none;
-        }
-    }
-
-
-    .contenedor-boton {
-        display: flex;
-        justify-content: center;
-
-        button a {
-
-            margin: 0px;
-            padding: 0;
-            text-decoration: none;
-
-        }
-    }
-
 }

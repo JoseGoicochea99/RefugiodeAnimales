@@ -1,0 +1,114 @@
+@import "components/variables";
+
+
+.contenedor-contacto {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: map-get($map: $coloresfondos, $key: 'color6' );
+
+    .contacto {
+        width: 70%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: map-get($map: $coloresfondos, $key: 'color7' );
+        box-shadow: 0px 0px 10px 0px map-get($map: $coloresfondos, $key: 'color5' );
+
+        .contacto-mapa {
+
+            width: 100%;
+            height: auto;
+            flex: 50%;
+
+            iframe {
+
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .contacto-formulario {
+            width: 100%;
+            height: auto;
+            flex: 50%;
+            padding: 30px;
+            text-align: center;
+
+            h2 {
+
+                margin-bottom: 10px;
+            }
+
+
+            form {
+                .contacto-formulario-texto {
+
+                    width: 100%;
+                    height: 40px;
+                    /* cambiar color */
+                    color: map-get($map: $coloresfondos, $key: 'color3' );
+                    border: 1px solid map-get($map: $coloresbordes, $key: 'color4' );
+                    border-radius: 50px;
+                    outline: none;
+                    margin-bottom: 20px;
+                    padding: 15px;
+
+                    &::placeholder {
+
+                        color: map-get($map: $coloresfondos, $key: 'color3' );
+
+                    }
+                }
+
+                .contacto-formulario-area {
+
+                    width: 100%;
+                    height: 140px;
+                    /* cambiar color */
+                    color: map-get($map: $coloresfondos, $key: 'color3' );
+                    border: 1px solid map-get($map: $coloresfondos, $key: 'color3' );
+                    border-radius: 10px;
+                    outline: none;
+                    margin-bottom: 20px;
+                    padding: 15px;
+                    font-family:Georgia, 'Times New Roman', Times, serif;
+                }
+
+
+
+                .contacto-formulario-btn {
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    border-radius: 50px;
+                    background: linear-gradient(90deg, map-get($map: $coloresfondos, $key: 'color16' ), map-get($map: $coloresfondos, $key: 'color5' ));
+                    color: map-get($map: $coloresletras, $key: 'color5' );
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    font-size: 18px;
+                }
+
+
+            }
+        }
+
+
+    }
+
+}
+
+@media (max-width: 440px) {
+
+    .contacto-formulario h2 {
+        margin-right: 30px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+}
