@@ -5,7 +5,6 @@ header {
     width: 100%;
     height: 70px;
     background-color: map-get($map: $coloresfondos, $key: 'color2');
-    /* color de la barra del menu */
     color: $coloriconos;
     position: fixed;
     top: 0;
@@ -30,7 +29,7 @@ header {
             cursor: pointer;
         }
 
-       
+
 
     }
 
@@ -48,7 +47,7 @@ header {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: map-get($map: $coloresfondos, $key: 'color2' );
+    background-color: map-get($map: $coloresfondos, $key: 'color2');
     transition: all 0.8s;
     transform: translateX(-100%);
 
@@ -63,8 +62,13 @@ header {
             height: 60px;
             text-decoration: none;
             padding: 25px;
-            border-bottom: 1px solid map-get($map: $coloresbordes, $key: 'color1' );
-        
+            border-bottom: 1px solid map-get($map: $coloresbordes, $key: 'color1');
+
+            @media (min-width:1280px) {
+                font-size: 100px;
+                padding-top: 15px;
+            }
+
         }
     }
 
@@ -72,7 +76,7 @@ header {
 
 
 .menu a:hover {
-    background-color: map-get($map: $coloresfondos, $key: 'color4' );
+    background-color: map-get($map: $coloresfondos, $key: 'color4');
 }
 
 #menu-bar:checked~.menu {
@@ -83,6 +87,7 @@ header {
 
     header {
         display: flex;
+
         .menu {
             position: static;
             width: auto;
@@ -94,14 +99,15 @@ header {
             .navegacion {
                 display: flex;
                 list-style: none;
+
                 a {
                     border: none;
                     font-size: 20px;
                 }
             }
-    
-            
-    
+
+
+
         }
 
         label {
@@ -110,22 +116,28 @@ header {
     }
 
 
-    
 
-    
+
+
 
 }
 
 @media (min-width:1280px) {
-    .menu a {
-        font-size: 25px;
-        padding-top: 15px;
+    .menu {
+
+        a {
+            font-size: 60px;
+            padding-top: 15px;
+        }
     }
 }
 
 @media (min-width:2040px) {
-    .menu a {
-        font-size: 30px;
-        padding-top: 12px;
+    .menu {
+
+        a {
+            font-size: 100px;
+            padding-top: 12px;
+        }
     }
 }

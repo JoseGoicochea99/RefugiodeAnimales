@@ -16,7 +16,6 @@ header {
   width: 100%;
   height: 70px;
   background-color: #F1ECC3;
-  /* color de la barra del menu */
   color: #010036;
   position: fixed;
   top: 0;
@@ -55,6 +54,10 @@ header {
       text-decoration: none;
       padding: 25px;
       border-bottom: 1px solid #ffffff; }
+      @media (min-width: 1280px) {
+        .menu .navegacion li a {
+          font-size: 100px;
+          padding-top: 15px; } }
 
 .menu a:hover {
   background-color: #eeec98; }
@@ -83,12 +86,12 @@ header {
 
 @media (min-width: 1280px) {
   .menu a {
-    font-size: 25px;
+    font-size: 60px;
     padding-top: 15px; } }
 
 @media (min-width: 2040px) {
   .menu a {
-    font-size: 30px;
+    font-size: 100px;
     padding-top: 12px; } }
 
 /* BANNER */
@@ -98,27 +101,41 @@ header {
   #banner img {
     width: 100%;
     height: 100%; }
+  #banner .contenedor-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #FFBD9B; }
+    #banner .contenedor-banner h1 {
+      font-family: 'Manrope', sans-serif; }
 
 @media (min-width: 768px) {
   #banner {
     overflow: hidden; }
     #banner img {
       height: auto;
-      margin-top: -100px; } }
+      margin-top: -100px; }
+    #banner h1 {
+      font-size: 40px; } }
 
 @media (min-width: 1024px) {
   #banner {
     max-height: 600px;
     overflow: hidden; }
     #banner img {
-      margin-top: -100px; } }
+      margin-top: -100px; }
+    #banner h1 {
+      font-size: 60px; } }
 
 @media (min-width: 1900px) {
   #banner {
     max-height: 800px;
     overflow: hidden; }
     #banner img {
-      margin-top: -150px; } }
+      margin-top: -150px; }
+    #banner h1 {
+      font-size: 100px; } }
 
 /* ZONA PARA ADOPTAR ANIMALES */
 .section-adoptar {
